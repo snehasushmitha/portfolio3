@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body, h1, h2, h3, h4, h5, h6 {
+      font-family: "Raleway", sans-serif;
+    }
+    body {
+      background-color: bisque;
+    }
+    nav.w3-sidebar {
+      background-color: #d05858;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ac2698;
+    }
+    th {
+      background-color: #d05858;
+      color: #333;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    tr:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+<!--sidebar-->
+<nav class="w3-sidebar w3-collapse w3-animate-left" style="z-index:3;width:300px; background-color: #d05858;" id="mySidebar">
+  <div class="w3-container">
+    
+    <img src="C:\Users\Sneha\OneDrive\Pictures\Screenshots\Screenshot 2023-11-07 154132.png" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>STUDENT PORTFOLIO</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-bisque"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+    <a href="#education" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>EDUCATION</a>
+    <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cogs fa-fw w3-margin-right"></i>SKILLS</a>
+    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-tasks fa-fw w3-margin-right"></i>PROJECTS</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+</nav>
+
+<!--overlay -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!--main page-->
+<div class="w3-main" style="margin-left:300px">
+
+  <header id="about">
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+      <h1><b>S N Sneha Sushmitha</b></h1>
+      <h3><p>Computer Science Major</p></h3>
+      <p>B.Tech degree holder with a strong academic background and a passion for engineering.
+       Proficient in key engineering concepts and technologies, with hands-on experience gained through internships and projects.
+     Seeking an entry-level engineering position to apply my knowledge, problem-solving skills, and enthusiasm for contributing to innovative projects.</p>
+    </div>
+  </header>
+
+  <!--about-->
+  <div class="w3-container w3-padding-large" id="education">
+    <h4><b>Education</b></h4>
+  <table border="5">
+    <tr>
+      <th>Education</th>
+      <th>Institution</th>
+      <th>Graduation</th>
+    </tr>
+    <tr>
+      <td>Btech (Hons)</td>
+      <td>RV University</td>
+      <td>Expected: 2027</td>
+    </tr>
+    <tr>
+      <td>12th Grade</td>
+      <td>DPS, Bangalore South</td>
+      <td>2023</td>
+    </tr>
+    <tr>
+      <td>10th Grade</td>
+      <td>DPS, Bangalore South</td>
+      <td>2021</td>
+    </tr>
+  </table>
+    <hr>
+  </div>
+
+  <!--skills-->
+<div class="w3-container w3-padding-large" id="skills">
+    <h4><b>Skills</b></h4>
+    </div>
+
+<div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    
+
+    <ul class="w3-ul">
+        <li>
+            <h5>Programming Languages</h5>
+            <p>Medium level profieciency in C, Python, Shell</p>
+            </li>
+
+      <li>
+        <h5>Web Design</h5>
+        <p>Proficient in HTML, CSS, and JavaScript. Experience in creating responsive and visually appealing web layouts.</p>
+      </li>
+      
+        <li>
+            <h5>Project Management</h5>
+            <p>Expert at planning, organizing, and executing projects effectively.</p>
+      </li>
+    </ul>
+    
+    <hr>
+</div>
+
+  <!--projects-->
+<div class="w3-container w3-padding-large" id="projects">
+    <h4><b>Projects</b></h4>
+    <p>Miniproject for IWD course assessment</p>
+    <div class="w3-container w3-white">
+      <p><b>Description:</b> Designed a user-friendly recipe book that boasts a diverse collection of recipes that caters to everyone from novice cooks to seasoned chefs.</p>
+    </div>
+    <hr>
+  </div>
+
+  <!--contact-->
+  <div class="w3-container w3-padding-large w3-grey" id="contact">
+    <h4><b>Contact Information</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>sneha.sibyala@gmail.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Bangalore, India</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>+919663920312</p>
+      </div>
+
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <a href="#" class="btn btn-primary"><button onclick="alert('Your response has been submitted')">Submit</button> </a>
+    </form>
+  </div>
+
+  <!--footer-->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <h3>Social Media</h3>
+        <p>Connect with me:</p>
+        <a href="https://in.linkedin.com/"  target="_blank" rel="noopener noreferrer" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/"  target="_blank" rel="noopener noreferrer" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-github"></i></a>
+        <a href="https://www.instagram.com/"  target="_blank" rel="noopener noreferrer" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-instagram"></i></a>
+
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
